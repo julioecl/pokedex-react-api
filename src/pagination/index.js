@@ -6,9 +6,9 @@ const Pagination = (props) => {
         
     return (
         <Div>
-            <Button onClick={onLeftClick}> ◀ </Button>
+            <Button onClick={onLeftClick}>◀</Button>
             <div>{page} de {totalPages}</div>
-            <Button onClick={onRightClick}> ▶ </Button>
+            <Button onClick={onRightClick}>▶</Button>
         </Div>
     )
 }
@@ -22,7 +22,10 @@ const Div = styled.div`
     gap: 10px;
 `
 
-const Button = styled.button`
+const Button = styled.button`    
+    align-itens: center;    
     width: 20px;
-    height: 20px;
+    height: 20px; 
+    margin: auto;
+    border: none;        
 `

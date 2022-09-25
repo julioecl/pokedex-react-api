@@ -33,13 +33,14 @@ export default Pokemon
 
 const Section = styled.section`
     height: 100px;
-    width: 300px;
+    width: 275px;
     margin: 10px;
     display: flex;
     padding: 10px;
     text-transform: capitalize;
     font-size: 0.9em; 
     border: solid 0.8px;
+    border-radius: 4px;  
     justify-content: space-between;   
 `
 
@@ -61,5 +62,5 @@ const Img = styled.img`
 const Button = styled.button`    
     width: 25px;
     height: 25px;
-    cursor: po    
+    cursor: pointer;   
 `

@@ -8,20 +8,27 @@ const Searchbar = (props) => {
     const [search, setSearch ] = useState([0])
     const {onSearch} = props    
     const onChangeHandler = (e) => {        
-        setSearch(e.target.value)
+        setSearch(e.target.value)        
         if(e.target.value.length === 0 ) {
             onSearch(undefined)
         }
     }   
 
     const onButtonClickHandler = () => {
-        onSearch(search)        
-    }    
+        onSearch(search.toLowerCase())               
+    } 
     
-
+    const onKeyDownHandler = (e) => {
+        const key = e.which
+        if (key === 13) {
+            onButtonClickHandler()
+        }
+    }
+    
+    
     return (
         <Div>       
-            <Input placeholder="Buscar pokemón" onChange={onChangeHandler}/>
+            <Input placeholder="Buscar pokemón" onChange={onChangeHandler} onKeyDown={onKeyDownHandler}/>
             <Button onClick={onButtonClickHandler}> Buscar </Button>            
         </Div>
         
@@ -35,13 +42,13 @@ const Div = styled.div`
     gap: 15px;
     justify-content: center;
     padding: 10px; 
-    align-itens: center;
+    align-itens: center;    
 `
 
 const Input = styled.input`
     padding: 10px 10px;    
     background-color: white;
-    font-size: 1.2em;  
+    border-radius: 4px      
 `
 
 const Button = styled.button`
@@ -50,5 +57,5 @@ const Button = styled.button`
     color: white;
     padding: 10px 20px;
     text-align: center;
-    font-size: 1.2em; 
+    border-radius: 4px      
 `

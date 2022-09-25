@@ -13,9 +13,9 @@ const NavBar = () => {
             <div>
                 <Img src={logoImg} alt="PokeApi Logo"></Img>
             </div>
-            <div>
+            <Div>
                 { favoritePokemons.length } 💖
-            </div>
+            </Div>
         </Nav>
     )
 }
@@ -31,3 +31,7 @@ const Nav = styled.nav`
 `   
 const Img = styled.img`
     width: 160px;`
+
+const Div = styled.div`
+    font-size: 1.5em
+`
