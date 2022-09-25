@@ -41,7 +41,8 @@ const Section = styled.section`
     font-size: 0.9em; 
     border: solid 0.8px;
     border-radius: 4px;  
-    justify-content: space-between;   
+    justify-content: space-between;
+    background-color: #B6D3E2;   
 `
 
 const Div = styled.div`
@@ -50,7 +51,8 @@ const Div = styled.div`
     padding: 10px; 
     gap: 5px;
     text-align: center;
-    align-itens: center;       
+    align-itens: center; 
+         
 `
 
 const Img = styled.img`

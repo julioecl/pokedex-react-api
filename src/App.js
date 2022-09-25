@@ -97,9 +97,15 @@ export default App;
 const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
-    padding: 0;    
+    padding: 0;     
+  }
+
+  body {
+    background-color: #cee2eb;   
   }
 `
+
+
 const H2 = styled.h2`
   text-align: center;
   padding: 20px;

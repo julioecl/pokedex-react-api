@@ -47,7 +47,7 @@ const Div = styled.div`
 
 const Input = styled.input`
     padding: 10px 10px;    
-    background-color: white;
+    background-color: #E6F0F5;
     border-radius: 4px      
 `
 
