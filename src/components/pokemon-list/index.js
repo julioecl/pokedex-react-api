@@ -44,9 +44,7 @@ const Div = styled.div`
     flex-wrap: wrap;
     margin: auto;
     justify-content: center;
-    gap: 10px;
-    grid-template-columns: repeat(4, 1fr);
-      
+    gap: 10px;         
 `
 
 const Section = styled.section`
